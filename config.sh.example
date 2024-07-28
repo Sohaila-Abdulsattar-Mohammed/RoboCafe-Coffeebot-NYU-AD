@@ -1,0 +1,14 @@
+# config.sh
+
+# Server login credentials
+USER="username"
+SERVER1="server1name"
+SERVER2="server2name"
+PASSWORD="serverpassword"
+
+
+# Directories for each application
+TTS_API_DIR="location of tts api dir in the server"
+LLM_API_DIR="location of llm api dir in the server"
+
+PYTHON_PATH="python path in server"
