@@ -1,21 +1,9 @@
-#
-# Copyright (c) 2024, Daily
-#
-# SPDX-License-Identifier: BSD 2-Clause License
-#
-
-import sys
-sys.path.append('/home/mmvc/Downloads/pipecat/src/pipecat')
-
 import asyncio
 import aiohttp
 import os
 import sys
 import wave
 import json
-import subprocess
-import time
-from multiprocessing import Process
 from typing import List
 
 from openai._types import NotGiven, NOT_GIVEN
@@ -28,7 +16,6 @@ from pipecat.processors.aggregators.llm_response import LLMUserContextAggregator
 from pipecat.processors.logger import FrameLogger
 from pipecat.processors.frame_processor import FrameDirection
 from coqui_tts import TextToSpeechService
-# from pipecat.services.elevenlabs import ElevenLabsTTSService
 from pipecat.services.openai import OpenAILLMContext, OpenAILLMContextFrame, OpenAILLMService
 from pipecat.services.ai_services import AIService
 from pipecat.transports.services.daily import DailyParams, DailyTransport
@@ -39,7 +26,6 @@ from pipecat.frames.frames import (
     ImageRawFrame,
     SpriteFrame,
     Frame,
-    LLMMessagesFrame,
     TTSStoppedFrame
 )
 from pipecat.processors.frame_processor import FrameDirection, FrameProcessor
@@ -472,14 +458,7 @@ async def main(room_url: str, token):
 
         
 
-        #cailab 1: 10.224.35.95
-        #cailab 2: 10.224.35.92
-
-        # format:
-        # http://10.224.35.92:5000/tts for tts
-        # http://10.224.35.95:5001/v1 for llm
-
-        tts = TextToSpeechService(api_url='http://10.224.35.92:5000/tts', aiohttp_session=session) #edit link as needed
+        tts = TextToSpeechService(api_url=os.getenv("TTS_URL"), aiohttp_session=session) #edit link as needed
 
         # tts = ElevenLabsTTSService(
         #     aiohttp_session=session,
@@ -498,15 +477,9 @@ async def main(room_url: str, token):
             name="LLM",
             api_key="functionary",
             model="meetkai/functionary-small-v2.5",
-            base_url="http://10.224.35.95:5001/v1"
+            base_url=os.getenv("LLM_URL")
         )
 
-        # llm = OpenAILLMService(
-        #     name="LLM",
-        #     api_key="token-abc123",
-        #     model="fireworks-ai/llama-3-firefunction-v2",
-        #     base_url="http://10.224.35.95:5001/v1"
-        # )
 
         messages = []
         context = OpenAILLMContext(messages=messages)
