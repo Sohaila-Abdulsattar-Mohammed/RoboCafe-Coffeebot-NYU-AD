@@ -55,7 +55,7 @@ Before you begin, you'll need to set up your Daily account to obtain the necessa
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/Sohaila-Abdulsattar-Mohammed/RoboCafe-Coffeebot-NYU-AD.git
+git clone --recurse-submodules https://github.com/Sohaila-Abdulsattar-Mohammed/RoboCafe-Coffeebot-NYU-AD.git
 cd RoboCafe-Coffeebot-NYU-AD
 ```
 
