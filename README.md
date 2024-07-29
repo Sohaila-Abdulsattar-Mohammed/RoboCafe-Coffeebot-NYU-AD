@@ -33,8 +33,8 @@ Coffeebot requires powerful hardware, particularly strong GPUs, to effectively h
 #### For General Users
 Ensure you have access to a machine or server equipped with adequate GPU resources. Detailed steps on how to configure and run the LLM and TTS APIs are provided below to guide you through the necessary setup to get Coffeebot operational.
 
-#### For NYU Students
-NYU students may have the option to access university-provided servers that are equipped with the necessary hardware to support these models. If you are an NYU student and need access to these resources, please reach out to me for assistance at sohaila.mohammed@nyu.edu. After consulting with relevant faculty, I can provide you with the details required to configure your `config.sh` file. This will allow you to connect to NYU's servers and run the Coffeebot project.
+#### For NYU Affiliates
+NYU affiliates may have the option to access university-provided servers that are equipped with the necessary hardware to support these models. If you are an NYU affiliate and need access to these resources, please reach out to me for assistance at sohaila.mohammed@nyu.edu. After consulting with relevant faculty, I can provide you with the details required to configure your `config.sh` file. This will allow you to connect to NYU's servers and run the Coffeebot project.
 
 ### Prerequisites: Daily Co Setup
 Before you begin, you'll need to set up your Daily account to obtain the necessary API key and URL:
@@ -94,7 +94,7 @@ pip install -r requirements.txt
      ```
    - Note the URL at which your LLM API is running.
 
-#### For NYU Students
+#### For NYU Affiliates
 1. **Server Access:**
    - Create a `config.sh` file with the necessary details (which will be provided to you) to access NYU’s servers.
 
@@ -117,7 +117,7 @@ pip install -r requirements.txt
      - `TTS_URL`: The URL at which your TTS API is running; the format is `http://IP_ADDRESS:PORT/tts`.
      - `LLM_URL`: The URL at which your LLM API is running; the format is `http://IP_ADDRESS:PORT/v1`.
 
-   **Note for NYU Students:**
+   **Note for NYU Affiliates:**
    - The TTS and LLM URLs will be provided to you.
 
 2. **Configure Web UI Environment:**
@@ -158,7 +158,7 @@ pip install -r requirements.txt
 4. **Access the Web UI:**
    - Open your browser and go to `http://localhost:5173/` to interact with the Coffeebot web interface.
 
-#### For NYU Students
+#### For NYU Affiliates
 1. **Start All Necessary Processes:**
    - Execute the provided script to start all necessary processes:
      ```bash
