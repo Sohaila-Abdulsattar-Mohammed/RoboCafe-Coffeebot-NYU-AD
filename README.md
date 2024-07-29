@@ -8,7 +8,7 @@ Below is an overview of the interaction flow Coffeebot uses to guide users throu
 
 ![coffeebot flow of coffee order collection](flow_of_coffee_order_collection.jpg)
 
-Through the (Functionary LLM](https://github.com/MeetKai/functionary), the chatbot engages in dynamic conversations with users, making function calls when necessary to process the user inputs.
+Through the [Functionary LLM](https://github.com/MeetKai/functionary), the chatbot engages in dynamic conversations with users, making function calls when necessary to process the user inputs.
 
 ### Detailed Flow Description
 - **Coffee Pod Choice:** The chatbot starts by asking the user to choose a coffee pod. The options available are light, medium, or dark roast coffee pods.
