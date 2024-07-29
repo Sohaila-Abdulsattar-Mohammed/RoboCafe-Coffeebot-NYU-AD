@@ -114,8 +114,8 @@ pip install -r requirements.txt
      ```
      - `DAILY_SAMPLE_ROOM_URL`: The room URL you obtained as per the instructions in the prerequisites section.
      - `DAILY_API_KEY`: The API key you obtained from Daily as per the instructions in the prerequisites section.
-     - `TTS_URL`: The URL at which your TTS API is running; the format is http://IP_ADDRESS:PORT/tts.
-     - `LLM_URL`: The URL at which your LLM API is running; the format is http://IP_ADDRESS:PORT/v1.
+     - `TTS_URL`: The URL at which your TTS API is running; the format is `http://IP_ADDRESS:PORT/tts`.
+     - `LLM_URL`: The URL at which your LLM API is running; the format is `http://IP_ADDRESS:PORT/v1`.
 
    **Note for NYU Students:**
    - The TTS and LLM URLs will be provided to you.
