@@ -1,3 +1,4 @@
-[submodule "web-client-ui"]
-	path = web-client-ui
-	url = https://github.com/Sohaila-Abdulsattar-Mohammed/web-client-ui.git
+[submodule "web-client-ui-RoboCafe-Coffeebot-NYU-AD"]
+ path = web-client-ui-RoboCafe-Coffeebot-NYU-AD
+ url = https://github.com/Sohaila-Abdulsattar-Mohammed/web-client-ui-RoboCafe-Coffeebot-NYU-AD.git
+
