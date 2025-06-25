@@ -3,6 +3,9 @@
 ## Overview
 Coffeebot is a chatbot barista developed for the NYU-AD RoboCafe research project. It leverages the [Pipecat framework](https://github.com/pipecat-ai/pipecat) for conversational AI to take user-specific coffee orders. Coffeebot is tailored to operate according to the specifications of the Keurig K-Cafe Single Serve K-Cup Coffee, Latte, and Cappuccino Maker, meaning each order is crafted according to the options available on this specific machine. For its implementation, Coffeebot utilizes [MeetKai Functionary](https://github.com/MeetKai/functionary) for the language model (LLM), Tacotron2 (trained on the LJSpeech dataset and accessed through [Coqui-ai](https://github.com/coqui-ai/TTS)) for text-to-speech (TTS), and [Daily-co](https://www.daily.co/) for speech-to-text (STT). The user interface is based on a modified version of [Pipecat-ai’s web-client UI](https://github.com/pipecat-ai/web-client-ui).
 
+## Coffeebot Demo
+Examples of different coversations with the chatbot can be seen [here](https://docs.google.com/spreadsheets/d/1d4rYWiDST4IAb1AkeeVCmn5_FmzaGNjowGs70ccH6I4/edit?usp=sharing).
+
 ## Coffee Ordering Process
 Below is an overview of the interaction flow Coffeebot uses to guide users through placing their coffee orders. This flowchart represents how the chatbot interacts to ensure user preferences are accurately captured.
 
